@@ -8,7 +8,7 @@ package com.example.bankmanagementsystem
         println("Enter password")
         val password = readln()
         if( Authentication().auth(mail,password)){
-            Home().home()
+            home()
         }
 
     }

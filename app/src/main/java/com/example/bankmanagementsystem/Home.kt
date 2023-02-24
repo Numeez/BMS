@@ -1,7 +1,10 @@
 package com.example.bankmanagementsystem
 
-class Home{
- fun home(){
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
+import java.io.File
+
+fun home(){
      println("HOME")
      println("1>> User Management")
      println("2>> Account Management")
@@ -20,7 +23,16 @@ class Home{
  }
     fun userManagement(){
     println("User Management")
-        home()
+        println("Menu")
+        println("1>> Register User")
+        println("2>> User Details")
+        println("3>> Back")
+        val n:Int = readln().toInt()
+        when(n){
+            1-> registerUser()
+            2-> userDetails()
+            3-> back()
+        }
 
     }
 
@@ -41,4 +53,13 @@ class Home{
 
 
     }
-}
+
+
+    fun userDetails(){
+
+    }
+
+    fun back(){
+
+    }
+
