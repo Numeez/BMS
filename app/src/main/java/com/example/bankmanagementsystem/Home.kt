@@ -44,7 +44,8 @@ fun home(){
 
     fun logout(){
         println("logout")
-        login()
+        auth()
+
 
     }
 

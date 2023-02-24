@@ -3,8 +3,12 @@ package com.example.bankmanagementsystem
 import com.google.gson.Gson
 
 
-class Authentication {
-    fun auth( Mail:String, Password:String) :Boolean {
+    fun auth ()  {
+        println("Login")
+        println("Enter mail")
+        val mail = readln()
+        println("Enter password")
+        val password = readln()
         var index:Int=0
         val user = Gson().fromJson(userFile.readText(), UserModel::class.java)
 
@@ -20,9 +24,12 @@ class Authentication {
             passwordList.add(i.password)
 
         }
-        if(mailList.contains(Mail) && passwordList.contains(Password)){
+
+        if(mailList.contains(mail))
+        {
+            if(passwordList.contains(password)){
             for(i in passwordList){
-                if(i==Password){
+                if(i==password){
                     index = passwordList.indexOf(i)
 
                 }
@@ -36,8 +43,16 @@ class Authentication {
                 println("User Home")
             }
         }
-        return false
+            else{
+                println("User doesn't Exist")
+                auth()
 
+            }
+
+        }
+        else {
+            println("User doesn't Exist")
+            auth()
+        }
     }
 
-}
