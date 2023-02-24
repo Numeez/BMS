@@ -16,7 +16,7 @@ fun registerUser(){
      val pattern_email = Regex("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+\$")
      val pattern_mobile = Regex("^(\\+91[\\-\\s]?)?[0]?(91)?[789]\\d{9}\$")
 
-         println("Register admin")
+    println("Register admin")
 
          while (fname == "") {
              println("Enter  first name")
@@ -79,6 +79,7 @@ fun registerUser(){
 
          user.add(u)
          userFile.writeText(GsonBuilder().setPrettyPrinting().create().toJson(user))
+        userManagement()
      }
 
 

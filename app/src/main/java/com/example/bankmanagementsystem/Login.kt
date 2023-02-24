@@ -10,5 +10,9 @@ package com.example.bankmanagementsystem
         if( Authentication().auth(mail,password)){
             home()
         }
+        else{
+            println("Invalid email or password")
+            login()
+        }
 
     }
