@@ -77,7 +77,9 @@ fun main() {
             mobile = mobile,
             password = password,
             isAdmin = true
+
         )
+
 
         user.add(u)
         userFile.writeText(GsonBuilder().setPrettyPrinting().create().toJson(user))
