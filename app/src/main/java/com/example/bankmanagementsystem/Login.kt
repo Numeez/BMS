@@ -7,12 +7,7 @@ package com.example.bankmanagementsystem
         val mail = readln()
         println("Enter password")
         val password = readln()
-        if( Authentication().auth(mail,password)){
-            home()
-        }
-        else{
-            println("Invalid email or password")
-            login()
-        }
+         Authentication().auth(mail,password)
+
 
     }
