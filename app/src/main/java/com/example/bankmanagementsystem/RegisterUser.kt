@@ -5,7 +5,7 @@ import com.google.gson.GsonBuilder
 import java.io.File
 
 fun registerUser(){
-     val userFile = File("C:\\Users\\158534\\AndroidStudioProjects\\BMS\\app\\src\\main\\java\\com\\example\\bankmanagementsystem\\users.json")
+     val userFile = File("C:\\Users\\158380\\AndroidStudioProjects\\BankManagementSystem\\app\\src\\main\\java\\com\\example\\bankmanagementsystem\\users.json")
      val user = Gson().fromJson(userFile.readText(), UserModel::class.java)
      var fname = ""
      var lname = ""
