@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": "6b1800e3-309d-4bf9-81af-df616a380e2e",
+    "isAdmin": true,
+    "firstName": "Numeez",
+    "lastName": "Baloch",
+    "mail": "numeez@gmail.com",
+    "mobile": "+91-8000982560",
+    "password": "numeezbaloch@1717"
+  },
+  {
+    "id": "f80f276c-4778-4aac-ad63-cd434dea0fd5",
+    "isAdmin": false,
+    "firstName": "Varda",
+    "lastName": "Karimi",
+    "mail": "varda@gmail.com",
+    "mobile": "+91-7779076786",
+    "password": "varda@17"
+  },
+  {
+    "id": "2d6c8270-6311-4420-9436-1ee21f9e6576",
+    "isAdmin": false,
+    "firstName": "Shreyasi",
+    "lastName": "Desai",
+    "mail": "shreyasi@4545",
+    "mobile": "+91-9876543211",
+    "password": "1234567890"
+  }
+]

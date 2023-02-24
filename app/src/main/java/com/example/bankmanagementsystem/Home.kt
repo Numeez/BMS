@@ -60,6 +60,7 @@ fun home(){
     }
 
     fun back(){
+        home()
 
     }
 
