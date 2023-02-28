@@ -23,6 +23,7 @@ fun home(){
  }
     fun userManagement(){
     println("User Management")
+        admin_logs("Admin entered User Management functionality")
         println("Menu")
         println("1>> Register User")
         println("2>> User Details")
@@ -38,6 +39,7 @@ fun home(){
 
     fun accountManagement(){
         println("Account Management")
+        admin_logs("Admin entered Account Management functionality")
         home()
 
     }

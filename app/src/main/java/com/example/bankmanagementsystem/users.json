@@ -1,6 +1,6 @@
 [
   {
-    "id": "6b1800e3-309d-4bf9-81af-df616a380e2e",
+    "id": "63688108-7702-4501-86ab-c0db7b0812dc",
     "isAdmin": true,
     "firstName": "Numeez",
     "lastName": "Baloch",
@@ -9,21 +9,21 @@
     "password": "numeezbaloch@1717"
   },
   {
-    "id": "f80f276c-4778-4aac-ad63-cd434dea0fd5",
+    "id": "ec665aa8-9fb3-4395-bf26-ca4676353857",
     "isAdmin": false,
-    "firstName": "Varda",
-    "lastName": "Karimi",
+    "firstName": "varda",
+    "lastName": "karimi",
     "mail": "varda@gmail.com",
-    "mobile": "+91-7779076786",
-    "password": "varda@17"
+    "mobile": "+91-9898656523",
+    "password": "varda@171717"
   },
   {
-    "id": "2d6c8270-6311-4420-9436-1ee21f9e6576",
+    "id": "a3b0b487-d095-4756-b8c4-dc1a8f3ceaa6",
     "isAdmin": false,
-    "firstName": "Shreyasi",
-    "lastName": "Desai",
-    "mail": "shreyasi@4545",
-    "mobile": "+91-9876543211",
-    "password": "1234567890"
+    "firstName": "Maulik",
+    "lastName": "PKumar",
+    "mail": "maulik@gmail.com",
+    "mobile": "+91-9876543210",
+    "password": "maulik@171717"
   }
 ]

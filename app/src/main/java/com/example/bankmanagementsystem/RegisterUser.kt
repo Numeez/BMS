@@ -5,7 +5,9 @@ import com.google.gson.GsonBuilder
 import java.io.File
 
 fun registerUser(){
-     val userFile = File("C:\\Users\\158534\\AndroidStudioProjects\\BMS\\app\\src\\main\\java\\com\\example\\bankmanagementsystem\\users.json")
+    val Transaction_file = File("C:\\Users\\158380\\AndroidStudioProjects\\BankManagementSystem\\app\\src\\main\\java\\com\\example\\bankmanagementsystem\\transactions.json")
+    val user_Transaction = Gson().fromJson(Transaction_file.readText(), TransactionModel::class.java)
+     val userFile = File("C:\\Users\\158380\\AndroidStudioProjects\\BankManagementSystem\\app\\src\\main\\java\\com\\example\\bankmanagementsystem\\users.json")
      val user = Gson().fromJson(userFile.readText(), UserModel::class.java)
      var fname = ""
      var lname = ""
@@ -76,6 +78,9 @@ fun registerUser(){
              mobile = mobile,
              password = password
          )
+        val transaction_u = Transaction(fname+" "+ lname,email)
+        user_Transaction.add(transaction_u)
+            Transaction_file.writeText(GsonBuilder().setPrettyPrinting().create().toJson(user_Transaction))
 
          user.add(u)
          userFile.writeText(GsonBuilder().setPrettyPrinting().create().toJson(user))

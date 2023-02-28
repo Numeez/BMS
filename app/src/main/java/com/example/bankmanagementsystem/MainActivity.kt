@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 
-val userFile = File("C:\\Users\\158534\\AndroidStudioProjects\\BMS\\app\\src\\main\\java\\com\\example\\bankmanagementsystem\\users.json")
+val userFile = File("C:\\Users\\158380\\AndroidStudioProjects\\BankManagementSystem\\app\\src\\main\\java\\com\\example\\bankmanagementsystem\\users.json")
 fun main() {
     val user = Gson().fromJson(userFile.readText(), UserModel::class.java)
     var fname = ""
@@ -83,6 +83,7 @@ fun main() {
 
         user.add(u)
         userFile.writeText(GsonBuilder().setPrettyPrinting().create().toJson(user))
+        auth()
     }
     else{
     auth()
