@@ -12,7 +12,8 @@ data class User(
     val lastName:String,
     val mail:String,
     val mobile:String,
-    val password :String
+    val password :String,
+    val account:MutableList<Account> = mutableListOf(),
 
     )
 

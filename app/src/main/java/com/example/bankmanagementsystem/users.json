@@ -1,29 +1,20 @@
 [
   {
-    "id": "63688108-7702-4501-86ab-c0db7b0812dc",
+    "id": "15653635-a318-4445-ad4e-a78f6bab5b16",
     "isAdmin": true,
-    "firstName": "Numeez",
-    "lastName": "Baloch",
-    "mail": "numeez@gmail.com",
-    "mobile": "+91-8000982560",
-    "password": "numeezbaloch@1717"
-  },
-  {
-    "id": "ec665aa8-9fb3-4395-bf26-ca4676353857",
-    "isAdmin": false,
     "firstName": "varda",
     "lastName": "karimi",
     "mail": "varda@gmail.com",
-    "mobile": "+91-9898656523",
-    "password": "varda@171717"
-  },
-  {
-    "id": "a3b0b487-d095-4756-b8c4-dc1a8f3ceaa6",
-    "isAdmin": false,
-    "firstName": "Maulik",
-    "lastName": "PKumar",
-    "mail": "maulik@gmail.com",
-    "mobile": "+91-9876543210",
-    "password": "maulik@171717"
+    "mobile": "+91-7779076786",
+    "password": "varda@17",
+    "account": [
+      {
+        "accountNumber": "1b05583c-eb72-402b-ac05-75ccb1abeb68",
+        "balance": 100000.0,
+        "accountType": "1",
+        "id": "15653635-a318-4445-ad4e-a78f6bab5b16",
+        "isActive": true
+      }
+    ]
   }
 ]
