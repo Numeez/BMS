@@ -36,7 +36,7 @@ import com.google.gson.Gson
             if (currentUser.isAdmin) {
                 home()
             } else {
-                println("User Home")
+                userHome()
             }
         } else {
             println("User doesn't Exist")

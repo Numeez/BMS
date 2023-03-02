@@ -28,7 +28,7 @@ fun home(){
  }
     fun userManagement(){
     println("User Management")
-       // admin_logs("Admin entered User Management functionality")
+       admin_logs("Admin entered User Management functionality")
         println("Menu")
         println("1>> Register User")
         println("2>> User Details")
@@ -54,7 +54,7 @@ fun home(){
             2->accountDetails()
             3->back()
         }
-        //admin_logs("Admin entered Account Management functionality")
+        admin_logs("Admin entered Account Management functionality")
         home()
 
     }
@@ -91,6 +91,7 @@ fun home(){
     }
 
     fun createAccount() {
+        admin_logs("Admin created a user by itself ")
             println("Enter Email of the user")
             val e: String = readln()
             email = e
@@ -150,6 +151,23 @@ fun home(){
 
 
     fun accountDetails() {
+        admin_logs("Admin printed account details of users ")
+        val user = Gson().fromJson(userFile.readText(), UserModel::class.java)
+        println("User information")
+
+        for(i in user){
+            println("*********************************************")
+            println("\t")
+            println("${i.firstName} ${i.lastName}")
+            for(j in i.account){
+                println("Account id :  ${j.id}")
+                println("Account type :  ${j.accountType}")
+                println("Account balance : ${j.balance}")
+                println("Account status : ${j.isActive}")
+            }
+            println("*********************************************")
+            println("\t")
+        }
 
 
     }

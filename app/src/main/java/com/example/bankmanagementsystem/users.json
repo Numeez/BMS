@@ -16,5 +16,23 @@
         "isActive": true
       }
     ]
+  },
+  {
+    "id": "5c8797fb-95ec-4bd6-b50a-8fbb8007e6fa",
+    "isAdmin": false,
+    "firstName": "NUMEEZBALOCH",
+    "lastName": "",
+    "mail": "numeez@gmail.com",
+    "mobile": "+91-8000982560",
+    "password": "numeez@17",
+    "account": [
+      {
+        "accountNumber": "4eb85571-8639-4da1-b33a-fae12bcb5aa1",
+        "balance": 20000.0,
+        "accountType": "1",
+        "id": "5c8797fb-95ec-4bd6-b50a-8fbb8007e6fa",
+        "isActive": true
+      }
+    ]
   }
 ]
